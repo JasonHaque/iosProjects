@@ -15,6 +15,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="xLF-mp-dkT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02W-2A-cQZ" userLabel="FirstButton">
                                 <rect key="frame" x="64.5" y="413.5" width="285" height="69"/>
                                 <state key="normal" title="Sign In with facebook" backgroundImage="FB">
@@ -49,11 +52,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="3nm-bR-8AT" firstAttribute="top" secondItem="o5q-XB-jjZ" secondAttribute="bottom" constant="10" id="EL5-2R-dO4"/>
+                            <constraint firstItem="xLF-mp-dkT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JSg-9y-tK5"/>
                             <constraint firstItem="02W-2A-cQZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LN6-h7-mvG"/>
                             <constraint firstItem="cC2-WS-GpD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ltr-ta-0hL"/>
                             <constraint firstItem="tea-lq-QAZ" firstAttribute="top" secondItem="cC2-WS-GpD" secondAttribute="bottom" constant="30" id="OOt-Uw-4AZ"/>
                             <constraint firstItem="02W-2A-cQZ" firstAttribute="top" secondItem="tea-lq-QAZ" secondAttribute="bottom" constant="20" id="QAg-7I-KmP"/>
+                            <constraint firstAttribute="bottom" secondItem="xLF-mp-dkT" secondAttribute="bottom" id="Rn1-Yy-Ukg"/>
+                            <constraint firstItem="xLF-mp-dkT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="S4W-0R-evd"/>
                             <constraint firstItem="3nm-bR-8AT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UfT-6O-KYr"/>
+                            <constraint firstAttribute="trailing" secondItem="xLF-mp-dkT" secondAttribute="trailing" id="dFr-iT-1y2"/>
                             <constraint firstItem="02W-2A-cQZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dtP-ea-KSO"/>
                             <constraint firstItem="o5q-XB-jjZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fjt-p1-aY4"/>
                             <constraint firstItem="tea-lq-QAZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o5r-29-oXL"/>
@@ -68,6 +75,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Background" width="414" height="896"/>
         <image name="Email" width="285" height="69"/>
         <image name="FB" width="285" height="69"/>
         <image name="Google" width="285" height="69"/>
