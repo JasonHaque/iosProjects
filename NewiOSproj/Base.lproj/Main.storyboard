@@ -15,24 +15,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello from Jason" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKG-HG-9V6">
-                                <rect key="frame" x="142.5" y="437.5" width="129" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02W-2A-cQZ" userLabel="FirstButton">
+                                <rect key="frame" x="133.5" y="433" width="147" height="30"/>
+                                <state key="normal" title="Sign In with facebook"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5q-XB-jjZ" userLabel="SecondButton">
+                                <rect key="frame" x="141" y="473" width="132" height="30"/>
+                                <state key="normal" title="Sign in with Google"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nm-bR-8AT">
+                                <rect key="frame" x="145.5" y="513" width="123" height="30"/>
+                                <state key="normal" title="Sign in With Email"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login or Create an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tea-lq-QAZ">
+                                <rect key="frame" x="103.5" y="397" width="207" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social   Squid" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nv6-2u-Jsy">
+                                <rect key="frame" x="120" y="341" width="172.5" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="1cg-rB-a1X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="bKG-HG-9V6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jj9-mo-vVV"/>
-                            <constraint firstItem="bKG-HG-9V6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wg7-Jp-kzk"/>
+                            <constraint firstItem="Nv6-2u-Jsy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="297" id="DTM-WI-Sty"/>
+                            <constraint firstItem="3nm-bR-8AT" firstAttribute="top" secondItem="o5q-XB-jjZ" secondAttribute="bottom" constant="10" id="EL5-2R-dO4"/>
+                            <constraint firstItem="02W-2A-cQZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LN6-h7-mvG"/>
+                            <constraint firstItem="Nv6-2u-Jsy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="RaH-UV-8xp"/>
+                            <constraint firstItem="3nm-bR-8AT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UfT-6O-KYr"/>
+                            <constraint firstItem="02W-2A-cQZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dtP-ea-KSO"/>
+                            <constraint firstItem="o5q-XB-jjZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fjt-p1-aY4"/>
+                            <constraint firstItem="tea-lq-QAZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o5r-29-oXL"/>
+                            <constraint firstItem="o5q-XB-jjZ" firstAttribute="top" secondItem="02W-2A-cQZ" secondAttribute="bottom" constant="10" id="qHM-ra-Ei9"/>
+                            <constraint firstItem="tea-lq-QAZ" firstAttribute="top" secondItem="Nv6-2u-Jsy" secondAttribute="bottom" constant="20" id="udC-Ss-KDz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-203" y="115"/>
+            <point key="canvasLocation" x="-204.34782608695653" y="114.50892857142857"/>
         </scene>
     </scenes>
 </document>
